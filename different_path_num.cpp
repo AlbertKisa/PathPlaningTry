@@ -29,12 +29,23 @@ public:
         }
         return dp[m_row-1][m_col-1];
     }
+    void BFS(){
+        
+    }
 };
 
 int main()
 {
     int m,n;
     cin>>m>>n;
+    int grid[5][3] = {
+        {0, 0, 0},
+        {1, 1, 0},
+        {0, 0, 0},
+        {0, 1, 1},
+        {0, 0, 0}
+    };
+    
     PathSolution path;
     int result;
     result = path.dynamic_programming(m, n);
