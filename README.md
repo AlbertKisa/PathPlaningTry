@@ -22,4 +22,4 @@ BFS（）
     }  
 }
 ```
-具体试用说明见[文档](https://https://AlbertKisa.github.io/PathPlaningTry/)
+具体试用说明见[文档](https://AlbertKisa.github.io/PathPlaningTry/)
