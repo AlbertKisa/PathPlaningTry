@@ -5,7 +5,29 @@
 
 #include<iostream>
 #include<vector>
+#include<queue>
 using namespace std;
+
+//define map and direction
+int Map[5][3] = {
+    {0, 0, 0},
+    {1, 1, 0},
+    {0, 0, 0},
+    {0, 1, 1},
+    {0, 0, 0}
+};
+
+int dir[4][2] = {
+    {1, 0},
+    {-1, 0},
+    {0, -1},
+    {0, 1}
+};
+
+struct node
+{
+    int x, y, step;
+}now, next;
 
 class PathSolution{
 private:
@@ -29,8 +51,11 @@ public:
         }
         return dp[m_row-1][m_col-1];
     }
-    void BFS(){
-        
+    void BFS(int x, int y){
+        queue<node>q;
+        int xx, yy, zz;
+        Map[x][y] = 2;
+
     }
 };
 
@@ -38,13 +63,7 @@ int main()
 {
     int m,n;
     cin>>m>>n;
-    int grid[5][3] = {
-        {0, 0, 0},
-        {1, 1, 0},
-        {0, 0, 0},
-        {0, 1, 1},
-        {0, 0, 0}
-    };
+
     
     PathSolution path;
     int result;
